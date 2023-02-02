@@ -39,7 +39,7 @@ class BBYbot():
         self.url = BBY_URL
 
         # Product details
-        self.SKUs = config.get('ITEM_INFO', 'SKUs').replace(' ', '').strip('\"').split(",")
+        self.SKUs = config.get('ITEM_INFO', 'SKU').replace(' ', '').strip('\"').split(",")
 
         # Account details
         self.username = config.get('BBY_ACCOUNT', 'USERNAME').strip('\"')
